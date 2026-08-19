@@ -5,7 +5,7 @@
 <h1 align="center">Tyler Jones</h1>
 
 <p align="center">
-  <b>CFD Engineer @ Cadence</b> &nbsp;·&nbsp; <b>M.S. student @ UW–Madison</b><br>
+  <b>Engineering Services Intern @ Cadence</b> &nbsp;·&nbsp; <b>M.S. student @ UW–Madison</b><br>
   Finite volume methods, solver development, and the occasional 18M-cell mesh that refuses to converge.
 </p>
 
