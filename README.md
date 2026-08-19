@@ -26,22 +26,6 @@ TODO
 
 TODO
 
-
-
-<details>
-<summary><b>🛠️ Tooling & environment</b></summary>
-
-<br>
-
-**Solvers:** OpenFOAM v2312 · Cradle scFLOW · Fidelity CFD
-**Languages:** C++ · Python · MATLAB · Bash
-**Build & VC:** CMake · Git · wmake
-**Meshing:** Pointwise · Gmsh · blockMesh (usually via a Python generator)
-**Post:** ParaView · VTK · Matplotlib
-**Environment:** WSL2 / Ubuntu, because the Windows laptop was not negotiable
-
-</details>
-
 ---
 
 ### Stats
