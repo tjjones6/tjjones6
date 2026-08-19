@@ -5,7 +5,7 @@
 <h1 align="center">Tyler Jones</h1>
 
 <p align="center">
-  <b>Engineering Services Intern @ Cadence</b> &nbsp;·&nbsp; <b>M.S. student @ UW–Madison</b><br>
+  <b>Engineering Services Intern @ Cadence</b> &nbsp;·&nbsp; <b>M.S. Aerospace Engineering student @ UW–Madison</b><br>
 </p>
 
 <p align="center">
@@ -22,11 +22,3 @@ TODO
 
 ---
 
-### Selected Work
-
-TODO
-
-
----
-
-<p align="center"><i>"Essentially, all models are wrong, but some are useful." — George Box</i></p>
