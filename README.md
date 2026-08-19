@@ -6,7 +6,6 @@
 
 <p align="center">
   <b>Engineering Services Intern @ Cadence</b> &nbsp;·&nbsp; <b>M.S. student @ UW–Madison</b><br>
-  Finite volume methods, solver development, and the occasional 18M-cell mesh that refuses to converge.
 </p>
 
 <p align="center">
@@ -19,36 +18,15 @@
 
 ### About
 
-I build and validate computational fluid dynamics solvers — both commercially and from scratch. Day to day I run high-lift validation cases (CRM-HL / AIAA High Lift Prediction Workshop) in Cradle scFLOW and Fidelity CFD. Evenings and weekends I write my own solvers in C++ and Python to understand what the commercial codes are actually doing under the hood.
-
-- 🔬 **Currently building:** `cavity2d` — a from-scratch C++ incompressible Navier–Stokes solver (SIMPLE + Rhie–Chow on a collocated grid) with geometric multigrid acceleration of the pressure-correction equation
-- 📚 **Studying:** numerical methods for PDEs, Krylov solvers, and preconditioning
-- 🧩 **Interested in:** high-order schemes, turbulence modeling (SA, k-ω SST), HPC, and making solvers that are actually readable
-- 💬 **Ask me about:** OpenFOAM mesh conversion pain, Rhie–Chow interpolation, or why your residuals plateaued at 1e-3
+TODO
 
 ---
 
 ### Selected Work
 
-| Project | Description | Stack |
-| :--- | :--- | :--- |
-| **[cavity2d](https://github.com/tjjones6)** | Incompressible NS solver: collocated FVM, SIMPLE, Rhie–Chow, multigrid pressure correction. Verified via manufactured solutions, validated against Ghia et al. (1982). | `C++17` `CMake` `VTK` |
-| **[naca-viscous](https://github.com/tjjones6)** | Full viscous–inviscid airfoil analysis: panel method + integral boundary layer + coupling. XFOIL, but mine. | `Python` `NumPy` |
-| **[sa-channel](https://github.com/tjjones6)** | Spalart–Allmaras turbulent channel flow solver written from the model equations up. | `Python` |
-| **[hlpw-tools](https://github.com/tjjones6)** | Boundary-condition calculators and log parsers for High Lift Prediction Workshop cases. | `Python` `Tkinter` |
+TODO
 
-<details>
-<summary><b>📖 A bit more on the multigrid work</b></summary>
 
-<br>
-
-The pressure-correction (Poisson) solve dominates cost in a SIMPLE loop — a plain Gauss–Seidel smoother converges at a rate that degrades as `O(h²)` with mesh refinement, because low-frequency error components are essentially invisible to a local relaxation scheme.
-
-Geometric multigrid fixes this by restricting the residual onto coarser grids where those smooth modes *are* high-frequency, solving there, and prolongating the correction back. Done right, the iteration count becomes mesh-independent.
-
-The interesting engineering question is where the V-cycle stops paying for itself on a collocated grid where Rhie–Chow momentum interpolation couples the pressure and velocity fields in a way that isn't quite the clean Laplacian the textbooks assume.
-
-</details>
 
 <details>
 <summary><b>🛠️ Tooling & environment</b></summary>
