@@ -26,14 +26,6 @@ TODO
 
 TODO
 
----
-
-### Stats
-
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=tjjones6&show_icons=true&hide_border=true&theme=default&include_all_commits=true" alt="GitHub stats">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tjjones6&layout=compact&hide_border=true&theme=default" alt="Top languages">
-</p>
 
 ---
 
