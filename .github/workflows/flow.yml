@@ -1,0 +1,49 @@
+name: flow banner
+
+on:
+  schedule:
+    # 06:12 UTC daily. Off-the-hour times are less likely to be delayed by
+    # GitHub's scheduler backlog.
+    - cron: "12 6 * * *"
+  workflow_dispatch:
+    inputs:
+      gamma:
+        description: "Vortex strength (blank = derived from today's date)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install numpy scipy
+
+      - name: Solve and render
+        run: |
+          if [ -n "${{ inputs.gamma }}" ]; then
+            python sim/flow.py --gamma "${{ inputs.gamma }}" --out assets/flow.svg
+          else
+            python sim/flow.py --out assets/flow.svg
+          fi
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "flow-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/flow.svg
+          if git diff --staged --quiet; then
+            echo "no change"
+          else
+            git commit -m "flow: regenerate banner ($(date -u +%Y-%m-%d))"
+            git push
+          fi
