@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/flow.svg" alt="Potential flow past a cylinder, resolved daily" width="100%">
-</p>
-
 <h1 align="center">Tyler Jones</h1>
 
 <p align="center">
