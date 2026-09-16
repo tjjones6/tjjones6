@@ -1,7 +1,7 @@
 <h1 align="center">Tyler Jones</h1>
 
 <p align="center">
-  <b>Engineering Services Intern @ Cadence</b> &nbsp;·&nbsp; <b>M.S. Aerospace Engineering student @ UW–Madison</b><br>
+  <b>Engineering Services Intern @ Cadence Design Systems Inc.</b> &nbsp;·&nbsp; <b>M.S. Aerospace Engineering student @ UW–Madison</b><br>
 </p>
 
 <p align="center">
